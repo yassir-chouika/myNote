@@ -6,7 +6,7 @@ const Dashboard = () => {
   const router = useRouter();
 
   return (
-    <View className="flex-1 bg-[#114B5F] p-4">
+    <View className="flex-1 bg-midnightBlue p-4">
       <Text className="text-white text-2xl font-bold mb-4">My Notes</Text>
 
       {/* Placeholder empty state */}
@@ -14,8 +14,8 @@ const Dashboard = () => {
 
       {/* ADD button */}
       <Pressable
-        onPress={() => router.push("/form")}
-        className="bg-[#F45B69] mt-auto py-3 rounded-xl items-center"
+        onPress={() => router.push("/Form")}
+        className="bg-coralPink mt-auto py-3 rounded-xl items-center"
       >
         <Text className="text-white font-semibold text-lg">ADD</Text>
       </Pressable>

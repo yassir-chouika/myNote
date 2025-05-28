@@ -37,4 +37,4 @@ yarn-error.*
 *.tsbuildinfo
 
 dashboard.jsx
-noteCard.jsx
+Card.jsx

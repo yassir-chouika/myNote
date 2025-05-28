@@ -1,6 +1,6 @@
 // app/new.jsx
-import NoteForm from "../components/NoteForm";
+import Form from "./Form";
 
 export default function NewNoteScreen() {
-  return <NoteForm />;
+  return <Form />;
 }
