@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -45,16 +45,9 @@ export default function Form({ noteId }) {
   return (
     <ScrollView className="flex-1 bg-[#FFD4CA]">
       {/* Header */}
-      <View className="flex-row justify-between items-center px-4 py-6 bg-[#FFD4CA]">
+      <View className="px-4 py-6 bg-[#FFD4CA]">
         <Text className="text-2xl font-medium text-[#114B5F]">myNote</Text>
-        <TouchableOpacity className="bg-[#7EE4EC] rounded-lg px-4 py-2">
-          <Text className="text-[#114B5F] text-sm font-medium">Add Note</Text>
-        </TouchableOpacity>
-      </View>
-
-      {/* Back Label */}
-      <View className="px-4 mb-8">
-        <Text className="text-xl font-medium text-[#114B5F]">← Form</Text>
+        
       </View>
 
       {/* Form Fields */}
@@ -132,14 +125,14 @@ export default function Form({ noteId }) {
           <View className="flex-row justify-center">
             <TouchableOpacity
               className={`flex-row items-center px-4 py-2 rounded-lg ${
-                priority === "wait" ? "bg-[#114B5F]" : "bg-gray-200"
+                priority === "wait" ? "bg-[#115f30]" : "bg-gray-200"
               }`}
               onPress={() => setPriority(priority === "wait" ? "" : "wait")}
             >
               <View
                 className={`w-4 h-4 border-2 rounded mr-2 ${
                   priority === "wait"
-                    ? "bg-[#114B5F] border-[#114B5F]"
+                    ? "bg-[#115f30] border-[#115f30]"
                     : "border-gray-400"
                 }`}
               />
