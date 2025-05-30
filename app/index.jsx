@@ -29,7 +29,7 @@ export default function Dashboard() {
     <ScrollView className="flex-1 bg-[#626a76] px-4 pt-5 ">
       {/* Header with title + Add Note button */}
       <View className="mb-6 flex-row justify-between items-center">
-        <Text className="text-2xl font-medium text-[#114B5F]">myNote</Text>
+        <Text className="text-2xl font-medium text-[#114B5F]">My Note</Text>
         <TouchableOpacity
           className="bg-[#7EE4EC] rounded-lg px-4 py-2"
           onPress={() => router.push("/Form")}
@@ -72,7 +72,7 @@ export default function Dashboard() {
             </Text>
 
             {/* Last updated time */}
-            <Text className="text-xs text-center text-gray-500">{formattedTime}</Text>
+            <Text className="text-xs text-gray-500">{formattedTime}</Text>
           </TouchableOpacity>
         );
       })}

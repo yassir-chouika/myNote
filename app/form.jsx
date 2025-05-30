@@ -5,6 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  Pressable,
 } from "react-native";
 import { router } from "expo-router";
 import { getNote, saveNote } from "../utils/storage";
@@ -44,10 +45,22 @@ export default function Form({ noteId }) {
 
   return (
     <ScrollView className="flex-1 bg-[#FFD4CA]">
-      {/* Header */}
-      <View className="px-4 py-6 bg-[#FFD4CA]">
-        <Text className="text-2xl font-medium text-[#114B5F]">myNote</Text>
-        
+      <View className="flex flex-row items-center">
+        <Pressable
+          onPress={() => router.replace("/")}
+          className="mx-4 my-3 w-14 h-14 rounded-lg bg-[#114B5F]/10 items-center justify-center active:bg-[#114B5F]/20"
+          style={({ pressed }) => [
+            {
+              opacity: pressed ? 0.7 : 1,
+              transform: [{ scale: pressed ? 0.95 : 1 }],
+            },
+          ]}
+        >
+          <Text className="text-white font-bold text-xl">←</Text>
+        </Pressable>
+        <Text className="text-xl font-medium text-white flex-1 mr-16">
+          {noteId ? "Edit Note" : "New Note"}
+        </Text>
       </View>
 
       {/* Form Fields */}
