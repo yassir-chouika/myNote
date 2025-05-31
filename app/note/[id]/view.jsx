@@ -49,7 +49,7 @@ export default function NoteDetail() {
     : "";
 
   return (
-    <View className="flex-1 bg-[#FFD4CA]">
+    <View className="flex-1 bg-[#114B5F]">
       {/* Back button */}
       <View className="flex flex-row items-center">
         <Pressable

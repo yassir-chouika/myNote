@@ -44,10 +44,10 @@ export default function Form({ noteId }) {
   };
 
   return (
-    <ScrollView className="flex-1 bg-[#FFD4CA]">
+    <ScrollView className="flex-1 bg-[#114B5F]">
       <View className="flex flex-row items-center">
         <Pressable
-          onPress={() => router.replace("/")}
+          onPress={() => router.back()}
           className="mx-4 my-3 w-14 h-14 rounded-lg bg-[#114B5F]/10 items-center justify-center active:bg-[#114B5F]/20"
           style={({ pressed }) => [
             {
@@ -67,9 +67,7 @@ export default function Form({ noteId }) {
       <View className="px-4">
         {/* Title */}
         <View className="mb-6">
-          <Text className="text-base font-medium text-[#114B5F] mb-3">
-            Title
-          </Text>
+          <Text className="text-base font-medium text-white mb-3">Title</Text>
           <TextInput
             className="bg-white border border-[#7EE4EC] rounded-lg px-4 py-3 text-base text-[#114B5F]"
             value={title}
@@ -80,9 +78,7 @@ export default function Form({ noteId }) {
 
         {/* Content */}
         <View className="mb-8">
-          <Text className="text-base font-medium text-[#114B5F] mb-3">
-            Content
-          </Text>
+          <Text className="text-base font-medium text-white mb-3">Content</Text>
           <TextInput
             className="bg-white border border-[#7EE4EC] rounded-lg px-4 py-3 text-base min-h-48 text-[#114B5F]"
             value={content}
@@ -110,7 +106,7 @@ export default function Form({ noteId }) {
                 }`}
               />
               <Text className="text-sm font-medium text-[#114B5F]">
-                Top Priority
+                Important
               </Text>
             </TouchableOpacity>
 
@@ -129,9 +125,7 @@ export default function Form({ noteId }) {
                     : "border-gray-400"
                 }`}
               />
-              <Text className="text-sm font-medium text-[#114B5F]">
-                Moderate
-              </Text>
+              <Text className="text-sm font-medium text-[#114B5F]">Normal</Text>
             </TouchableOpacity>
           </View>
 
@@ -149,9 +143,7 @@ export default function Form({ noteId }) {
                     : "border-gray-400"
                 }`}
               />
-              <Text className="text-sm font-medium text-white">
-                It Can Wait
-              </Text>
+              <Text className="text-sm font-medium text-[#114B5F] ">Later</Text>
             </TouchableOpacity>
           </View>
         </View>
