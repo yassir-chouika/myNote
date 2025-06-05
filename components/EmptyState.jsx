@@ -2,11 +2,11 @@ import { View, Text } from "react-native";
 
 export default function EmptyState() {
   return (
-    <View className="flex-1 justify-center items-center px-4">
-      <View className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 max-w-sm w-full">
+    <View className="flex-1 justify-center items-center mt-20 px-4">
+      <View className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 max-w-sm w-full">
         <View className="items-center mb-6">
           <View className="w-16 h-16 rounded-2xl bg-blue-50 items-center justify-center mb-4">
-            <Text className="text-3xl">📝</Text>
+            <Text className="text-2xl">📝</Text>
           </View>
           <Text className="text-xl font-bold text-gray-800 mb-2 text-center">
             No Notes Yet
